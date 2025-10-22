@@ -318,57 +318,106 @@
 
                 .hero-container {
                     transform: translateY(-30px);
+                    padding: 1.5rem;
                 }
             }
 
             @media (max-width: 768px) {
                 .hero {
-                    min-height: 100vh;
+                    min-height: 90vh;
                 }
 
                 .hero-title {
-                    font-size: 2.5rem;
+                    font-size: 2.2rem;
                     letter-spacing: -0.5px;
+                    margin-bottom: 1.5rem;
                 }
                 
                 .hero-container p {
-                    font-size: 1rem;
+                    font-size: 0.9rem;
                     letter-spacing: 2px;
+                    margin-bottom: 1rem;
                 }
 
                 .hero-btn {
-                    padding: 0.875rem 2rem;
-                    font-size: 1rem;
+                    padding: 0.75rem 1.75rem;
+                    font-size: 0.95rem;
+                    width: 100%;
+                    justify-content: center;
                 }
 
                 .hero-cta {
                     flex-direction: column;
+                    gap: 0.75rem;
                 }
 
                 .hero-container::before {
                     width: 3px;
-                    height: 80px;
+                    height: 60px;
                     top: -10px;
                 }
 
                 .hero-container {
                     transform: translateY(-20px);
+                    padding: 1.25rem;
+                }
+
+                .scroll-indicator {
+                    bottom: 1rem;
+                }
+
+                .scroll-indicator i {
+                    font-size: 1.5rem;
                 }
             }
 
             @media (max-width: 576px) {
+                .hero {
+                    min-height: 85vh;
+                }
+
                 .hero-title {
-                    font-size: 2rem;
+                    font-size: 1.75rem;
                     letter-spacing: 0;
+                    margin-bottom: 1.25rem;
+                    line-height: 1.3;
                 }
 
                 .hero-container p {
-                    font-size: 0.85rem;
+                    font-size: 0.75rem;
                     letter-spacing: 1.5px;
+                    margin-bottom: 0.75rem;
+                }
+
+                .hero-btn {
+                    padding: 0.65rem 1.5rem;
+                    font-size: 0.9rem;
                 }
 
                 .hero-container {
                     transform: translateY(-10px);
+                    padding: 1rem;
+                }
+
+                .hero-container::before {
+                    height: 50px;
+                    width: 2px;
+                }
+            }
+
+            @media (max-width: 400px) {
+                .hero-title {
+                    font-size: 1.5rem;
+                }
+
+                .hero-container p {
+                    font-size: 0.7rem;
+                    letter-spacing: 1px;
+                }
+
+                .hero-btn {
+                    padding: 0.6rem 1.25rem;
+                    font-size: 0.85rem;
                 }
             }
 
@@ -386,6 +435,919 @@
             /* Ensure proper spacing */
             body {
                 overflow-x: hidden;
+            }
+
+            /* Mobile Responsive Improvements */
+            @media (max-width: 768px) {
+                /* Floating Section Mobile */
+                .floating-section {
+                    margin-top: -100px;
+                }
+
+                .floating-section .row {
+                    gap: 1rem !important;
+                }
+
+                .floating-section .col-lg-5,
+                .floating-section .col-lg-3 {
+                    margin-bottom: 1rem;
+                }
+
+                /* Quote Section */
+                .floating-section .fs-4 {
+                    font-size: 1.1rem !important;
+                    padding: 1.5rem 1rem !important;
+                    line-height: 1.6;
+                }
+
+                /* YouTube and Instagram Embed */
+                .floating-section iframe {
+                    max-width: 100%;
+                    height: auto;
+                }
+
+                /* Card Improvements - Horizontal Layout */
+                .card {
+                    display: flex;
+                    flex-direction: row;
+                    margin-bottom: 1rem;
+                }
+
+                .card-img-top {
+                    width: 35%;
+                    height: auto;
+                    min-height: 150px;
+                    max-height: 180px;
+                    object-fit: cover;
+                    border-radius: 0.375rem 0 0 0.375rem !important;
+                }
+
+                .card-body {
+                    width: 65%;
+                    padding: 0.875rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                }
+
+                .card-title {
+                    font-size: 0.95rem !important;
+                    margin-bottom: 0.5rem;
+                    line-height: 1.4;
+                }
+
+                .card-text {
+                    font-size: 0.8rem !important;
+                    line-height: 1.5;
+                }
+
+                .card .icon-box {
+                    width: 28px;
+                    height: 28px;
+                    padding: 6px;
+                }
+
+                /* Section Spacing */
+                #section {
+                    padding: 2rem 0 !important;
+                }
+
+                #section .container {
+                    padding: 1rem !important;
+                }
+
+                /* Section with Background Images */
+                #section-col {
+                    padding: 3rem 1.5rem !important;
+                    min-height: 250px;
+                }
+
+                #section-col h5 {
+                    font-size: 1.1rem !important;
+                }
+
+                #section-col span {
+                    font-size: 0.9rem !important;
+                }
+
+                /* Statistics Section */
+                .counter-count {
+                    font-size: 1.35rem !important;
+                }
+
+                /* Typography */
+                h3 {
+                    font-size: 1.5rem !important;
+                }
+
+                h5 {
+                    font-size: 1.15rem !important;
+                }
+
+                /* Button Improvements */
+                .btn {
+                    padding: 0.75rem 1.5rem;
+                    font-size: 0.95rem;
+                }
+
+                /* Iframe Container */
+                .iframe-container iframe {
+                    height: 280px !important;
+                }
+            }
+
+            @media (max-width: 576px) {
+                /* Further Mobile Optimization */
+                .floating-section {
+                    margin-top: -80px;
+                }
+
+                .floating-section .container {
+                    padding: 0.75rem !important;
+                }
+
+                /* Quote Section */
+                .floating-section .fs-4 {
+                    font-size: 1rem !important;
+                    padding: 1.25rem 0.875rem !important;
+                }
+
+                /* Top Navbar Mobile */
+                .top-navbar .navbar-nav {
+                    padding: 0.5rem 0;
+                }
+
+                .top-navbar .nav-link {
+                    padding: 0.5rem 0.75rem !important;
+                    font-size: 0.85rem;
+                }
+
+                /* Main Navbar Mobile */
+                .navbar-brand img {
+                    width: 100px !important;
+                }
+
+                .navbar-nav .nav-link {
+                    padding: 0.75rem 1rem !important;
+                    font-size: 0.95rem;
+                }
+
+                /* Card Further Optimization */
+                .card-img-top {
+                    width: 38%;
+                    min-height: 130px;
+                    max-height: 150px;
+                }
+
+                .card-body {
+                    width: 62%;
+                    padding: 0.75rem;
+                }
+
+                .card-title {
+                    font-size: 0.9rem !important;
+                    margin-bottom: 0.4rem;
+                }
+
+                .card-text {
+                    font-size: 0.75rem !important;
+                }
+
+                .card .text-secondary {
+                    font-size: 0.7rem !important;
+                }
+
+                /* Section Backgrounds */
+                #section-col {
+                    padding: 2.5rem 1rem !important;
+                    min-height: 220px;
+                }
+
+                #section-col h5 {
+                    font-size: 1rem !important;
+                }
+
+                #section-col span {
+                    font-size: 0.85rem !important;
+                }
+
+                /* Statistics Section */
+                .counter-count {
+                    font-size: 1.2rem !important;
+                }
+
+                .counter-count + p {
+                    font-size: 0.85rem;
+                }
+
+                /* Typography */
+                h3 {
+                    font-size: 1.35rem !important;
+                }
+
+                h5 {
+                    font-size: 1.05rem !important;
+                }
+
+                h6 {
+                    font-size: 0.95rem !important;
+                }
+
+                /* Button Improvements */
+                .btn {
+                    padding: 0.7rem 1.25rem;
+                    font-size: 0.9rem;
+                }
+
+                /* Small Image SDGs */
+                .small-image {
+                    width: 70px !important;
+                }
+
+                .sdgs-box {
+                    font-size: 11px !important;
+                    padding: 3px 7px !important;
+                }
+
+                /* Footer Mobile */
+                footer .container {
+                    padding: 1rem !important;
+                }
+
+                footer h6 {
+                    font-size: 1rem !important;
+                    margin-bottom: 1rem !important;
+                }
+
+                footer p {
+                    font-size: 0.85rem !important;
+                    line-height: 1.5;
+                }
+
+                footer .col-md-3,
+                footer .col-md-2,
+                footer .col-md-4 {
+                    margin-bottom: 2rem;
+                }
+
+                /* Campus Tour Video */
+                .iframe-container iframe {
+                    height: 220px !important;
+                }
+
+                /* Pendaftaran Section */
+                .bg-danger {
+                    padding: 60px 30px !important;
+                }
+
+                .bg-danger p {
+                    font-size: 0.9rem !important;
+                }
+
+                .bg-danger b {
+                    font-size: 1.5rem !important;
+                }
+
+                .bg-danger i {
+                    font-size: 45pt !important;
+                }
+            }
+
+            @media (max-width: 400px) {
+                /* Extra Small Devices */
+                .floating-section {
+                    margin-top: -70px;
+                }
+
+                .card-img-top {
+                    width: 40%;
+                    min-height: 120px;
+                    max-height: 140px;
+                }
+
+                .card-body {
+                    width: 60%;
+                    padding: 0.65rem;
+                }
+
+                .card-title {
+                    font-size: 0.85rem !important;
+                }
+
+                .card-text {
+                    font-size: 0.7rem !important;
+                }
+
+                #section-col {
+                    padding: 2rem 0.75rem !important;
+                    min-height: 200px;
+                }
+
+                #section-col h5 {
+                    font-size: 0.95rem !important;
+                }
+
+                #section-col span {
+                    font-size: 0.8rem !important;
+                }
+
+                h3 {
+                    font-size: 1.25rem !important;
+                }
+
+                h5 {
+                    font-size: 1rem !important;
+                }
+
+                .navbar-brand img {
+                    width: 90px !important;
+                }
+
+                .btn {
+                    padding: 0.65rem 1rem;
+                    font-size: 0.85rem;
+                }
+
+                .bg-danger {
+                    padding: 50px 20px !important;
+                }
+
+                .bg-danger b {
+                    font-size: 1.35rem !important;
+                }
+
+                .bg-danger i {
+                    font-size: 40pt !important;
+                }
+            }
+
+            /* Landscape Mobile Optimization */
+            @media (max-width: 768px) and (orientation: landscape) {
+                .hero {
+                    min-height: 100vh;
+                }
+
+                .hero-title {
+                    font-size: 2rem;
+                }
+
+                .hero-container {
+                    padding: 1rem;
+                }
+            }
+
+            /* Touch Target Improvements */
+            @media (max-width: 768px) {
+                a, button, .btn, .nav-link, .dropdown-item {
+                    min-height: 44px;
+                    display: inline-flex;
+                    align-items: center;
+                }
+
+                .card {
+                    cursor: pointer;
+                    -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
+                }
+            }
+
+            /* Improve Dropdown Menu Mobile */
+            @media (max-width: 991px) {
+                .navbar-nav .dropdown-menu {
+                    margin-left: 0;
+                    border-radius: 8px;
+                    margin-top: 0.25rem;
+                }
+
+                .navbar-nav .dropdown-item {
+                    padding: 0.65rem 1rem;
+                    font-size: 0.9rem;
+                }
+
+                .navbar-collapse {
+                    max-height: 70vh;
+                    overflow-y: auto;
+                }
+            }
+
+            /* Improve Container Padding Mobile */
+            @media (max-width: 768px) {
+                .container {
+                    padding-left: 1rem;
+                    padding-right: 1rem;
+                }
+            }
+
+            @media (max-width: 576px) {
+                .container {
+                    padding-left: 0.875rem;
+                    padding-right: 0.875rem;
+                }
+            }
+
+            /* Text Wrapping for All Elements */
+            @media (max-width: 768px) {
+                p, span, a, li {
+                    word-wrap: break-word;
+                    overflow-wrap: break-word;
+                    hyphens: auto;
+                }
+
+                ul li {
+                    font-size: 0.9rem;
+                    line-height: 1.6;
+                    margin-bottom: 0.5rem;
+                }
+            }
+
+            /* Mobile Responsive Improvements */
+            @media (max-width: 768px) {
+                /* Floating Section Mobile */
+                .floating-section {
+                    margin-top: -120px;
+                }
+
+                .floating-section .row {
+                    gap: 1rem !important;
+                }
+
+                .floating-section .col-lg-5,
+                .floating-section .col-lg-3 {
+                    margin-bottom: 1rem;
+                }
+
+                /* Move quote text higher on mobile */
+                .floating-section .fs-4 {
+                    padding-top: 2rem !important;
+                    margin-top: -1rem;
+                }
+
+                /* Increase spacing between yellow border and quote text on mobile */
+                .floating-section .col-lg-5 .border-warning {
+                    margin-bottom: 1.5rem !important;
+                }
+
+                /* YouTube and Instagram Embed */
+                .floating-section iframe {
+                    max-width: 100%;
+                    height: auto;
+                }
+
+                /* Card Improvements */
+                .card {
+                    margin-bottom: 1rem;
+                }
+
+                .card-img-top {
+                    height: 180px !important;
+                }
+
+                .card-body {
+                    padding: 1rem;
+                }
+
+                .card-title {
+                    font-size: 1rem !important;
+                }
+
+                .card-text {
+                    font-size: 0.875rem !important;
+                }
+
+                /* Section Spacing */
+                #section {
+                    padding: 2rem 0 !important;
+                }
+
+                #section .container {
+                    padding: 1rem !important;
+                }
+
+                /* Section with Background Images */
+                #section-col {
+                    padding: 3rem 1.5rem !important;
+                    min-height: 250px;
+                }
+
+                #section-col h5 {
+                    font-size: 1.1rem !important;
+                }
+
+                #section-col span {
+                    font-size: 0.9rem !important;
+                }
+
+                /* Statistics Section */
+                .counter-count {
+                    font-size: 1.25rem !important;
+                }
+
+                /* Improve text readability */
+                h3 {
+                    font-size: 1.5rem !important;
+                }
+
+                h5 {
+                    font-size: 1.1rem !important;
+                }
+
+                /* Button Improvements */
+                .btn {
+                    padding: 0.65rem 1.5rem;
+                    font-size: 0.9rem;
+                }
+
+                /* Iframe Container */
+                .iframe-container {
+                    padding: 0 1rem;
+                }
+
+                /* Quote Section */
+                .fs-4 {
+                    font-size: 1.1rem !important;
+                }
+            }
+
+            @media (max-width: 576px) {
+                /* Further Mobile Optimization */
+                .floating-section {
+                    margin-top: -100px;
+                }
+
+                .floating-section .container {
+                    padding: 0.5rem !important;
+                }
+
+                /* Adjust quote text position on small mobile */
+                .floating-section .fs-4 {
+                    padding-top: 1.5rem !important;
+                    margin-top: -1.5rem;
+                }
+
+                /* Adjust the quote text column */
+                .floating-section .col-lg-5 {
+                    padding-top: 0 !important;
+                }
+
+                /* Increase spacing between yellow border and quote text on small mobile */
+                .floating-section .col-lg-5 .border-warning {
+                    margin-bottom: 1.25rem !important;
+                }
+
+                /* Top Navbar Mobile */
+                .top-navbar .navbar-nav {
+                    padding: 0.5rem 0;
+                }
+
+                .top-navbar .nav-link {
+                    padding: 0.5rem 0.75rem !important;
+                    font-size: 0.85rem;
+                    white-space: nowrap;
+                }
+
+                /* Main Navbar Mobile */
+                .navbar-brand img {
+                    width: 100px !important;
+                }
+
+                .navbar-nav .nav-link {
+                    padding: 0.75rem 1rem !important;
+                    font-size: 0.95rem;
+                }
+
+                /* Card Further Optimization */
+                .card-img-top {
+                    height: 150px !important;
+                }
+
+                .card-body {
+                    padding: 0.75rem;
+                }
+
+                .card-title {
+                    font-size: 0.95rem !important;
+                    margin-bottom: 0.5rem;
+                    line-height: 1.4;
+                    word-wrap: break-word;
+                }
+
+                .card-text {
+                    font-size: 0.8rem !important;
+                    line-height: 1.5;
+                    word-wrap: break-word;
+                }
+
+                /* Section Backgrounds */
+                #section-col {
+                    padding: 2.5rem 1rem !important;
+                    min-height: 220px;
+                }
+
+                #section-col h5 {
+                    font-size: 1rem !important;
+                    line-height: 1.4;
+                    word-wrap: break-word;
+                }
+
+                #section-col span {
+                    font-size: 0.85rem !important;
+                    line-height: 1.5;
+                    word-wrap: break-word;
+                }
+
+                #section-col .border {
+                    width: 30px !important;
+                }
+
+                /* Statistics Section */
+                .counter-count {
+                    font-size: 1.1rem !important;
+                }
+
+                .counter-count + p {
+                    font-size: 0.85rem;
+                }
+
+                /* Typography */
+                h3 {
+                    font-size: 1.3rem !important;
+                    line-height: 1.4;
+                    word-wrap: break-word;
+                }
+
+                h5 {
+                    font-size: 1rem !important;
+                    line-height: 1.4;
+                    word-wrap: break-word;
+                }
+
+                h6 {
+                    font-size: 0.9rem !important;
+                    line-height: 1.4;
+                    word-wrap: break-word;
+                }
+
+                /* Button Improvements */
+                .btn {
+                    padding: 0.7rem 1.25rem;
+                    font-size: 0.9rem;
+                    white-space: normal;
+                    text-align: center;
+                    line-height: 1.4;
+                }
+
+                .btn-warning {
+                    width: auto;
+                    max-width: 100%;
+                    margin: 0 auto;
+                    display: inline-block;
+                }
+
+                .btn-md {
+                    padding: 0.6rem 1rem;
+                    font-size: 0.85rem;
+                }
+
+                /* Quote Section */
+                .fs-4 {
+                    font-size: 1rem !important;
+                    padding: 1rem !important;
+                    line-height: 1.6;
+                }
+
+                /* Small Image SDGs */
+                .small-image {
+                    width: 70px !important;
+                }
+
+                .sdgs-box {
+                    font-size: 12px !important;
+                    padding: 3px 8px !important;
+                }
+
+                /* Icon Box */
+                .icon-box {
+                    width: 25px !important;
+                    height: 25px !important;
+                    padding: 6px !important;
+                }
+
+                .icon-box i {
+                    font-size: 0.8rem;
+                }
+
+                /* Footer Mobile */
+                footer .container {
+                    padding: 1rem !important;
+                }
+
+                footer h6 {
+                    font-size: 1rem !important;
+                    margin-bottom: 1rem !important;
+                }
+
+                footer p {
+                    font-size: 0.85rem !important;
+                    margin-bottom: 0.5rem !important;
+                    line-height: 1.5;
+                    word-wrap: break-word;
+                }
+
+                footer .col-md-3,
+                footer .col-md-2,
+                footer .col-md-4 {
+                    margin-bottom: 2rem;
+                }
+
+                /* Campus Tour Video */
+                .iframe-container iframe {
+                    height: 250px !important;
+                }
+
+                /* Text Wrapping for All Elements */
+                p, span, a, li {
+                    word-wrap: break-word;
+                    overflow-wrap: break-word;
+                    hyphens: auto;
+                }
+
+                /* Floating Section Text */
+                .floating-section h2 {
+                    font-size: 1.1rem !important;
+                    line-height: 1.5;
+                    word-wrap: break-word;
+                }
+
+                /* List Items */
+                ul li {
+                    font-size: 0.85rem;
+                    line-height: 1.6;
+                    margin-bottom: 0.5rem;
+                }
+
+                /* Pendaftaran Section */
+                .bg-danger p {
+                    font-size: 0.9rem !important;
+                    line-height: 1.4;
+                }
+
+                .bg-danger b {
+                    font-size: 1.5rem !important;
+                }
+
+                .bg-danger i {
+                    font-size: 40pt !important;
+                }
+
+                .bg-danger .btn {
+                    padding: 0.7rem 1.5rem;
+                    font-size: 0.9rem;
+                }
+            }
+
+            @media (max-width: 400px) {
+                /* Extra Small Devices */
+                .floating-section {
+                    margin-top: -80px;
+                }
+
+                /* Further adjust quote text on extra small screens */
+                .floating-section .fs-4 {
+                    padding-top: 1.25rem !important;
+                    margin-top: -2rem;
+                }
+
+                /* Increase spacing between yellow border and quote text on extra small screens */
+                .floating-section .col-lg-5 .border-warning {
+                    margin-bottom: 1rem !important;
+                }
+
+                .card-img-top {
+                    height: 130px !important;
+                }
+
+                #section-col {
+                    padding: 2rem 0.75rem !important;
+                    min-height: 200px;
+                }
+
+                #section-col h5 {
+                    font-size: 0.9rem !important;
+                }
+
+                #section-col span {
+                    font-size: 0.8rem !important;
+                }
+
+                h3 {
+                    font-size: 1.2rem !important;
+                }
+
+                h5 {
+                    font-size: 0.95rem !important;
+                }
+
+                .navbar-brand img {
+                    width: 90px !important;
+                }
+
+                /* Button Extra Small */
+                .btn {
+                    padding: 0.65rem 1rem;
+                    font-size: 0.85rem;
+                }
+
+                /* Adjust spacing */
+                .py-5 {
+                    padding-top: 2rem !important;
+                    padding-bottom: 2rem !important;
+                }
+
+                .py-4 {
+                    padding-top: 1.5rem !important;
+                    padding-bottom: 1.5rem !important;
+                }
+
+                .py-3 {
+                    padding-top: 1rem !important;
+                    padding-bottom: 1rem !important;
+                }
+
+                /* Text improvements */
+                .card-title {
+                    font-size: 0.85rem !important;
+                }
+
+                .card-text {
+                    font-size: 0.75rem !important;
+                }
+
+                /* Floating section quote */
+                .floating-section h2 {
+                    font-size: 1rem !important;
+                }
+            }
+
+            /* Landscape Mobile Optimization */
+            @media (max-width: 768px) and (orientation: landscape) {
+                .hero {
+                    min-height: 100vh;
+                }
+
+                .hero-title {
+                    font-size: 2rem;
+                }
+
+                .hero-container {
+                    padding: 1rem;
+                }
+            }
+
+            /* Touch Target Improvements */
+            @media (max-width: 768px) {
+                a, button, .btn, .nav-link, .dropdown-item {
+                    min-height: 44px;
+                    display: inline-flex;
+                    align-items: center;
+                }
+
+                .card {
+                    cursor: pointer;
+                    -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
+                }
+            }
+
+            /* Improve Dropdown Menu Mobile */
+            @media (max-width: 991px) {
+                .navbar-nav .dropdown-menu {
+                    margin-left: 0;
+                    border-radius: 8px;
+                    margin-top: 0.25rem;
+                }
+
+                .navbar-nav .dropdown-item {
+                    padding: 0.65rem 1rem;
+                    font-size: 0.9rem;
+                }
+
+                .navbar-collapse {
+                    max-height: 70vh;
+                    overflow-y: auto;
+                }
+            }
+
+            /* Improve Container Padding Mobile */
+            @media (max-width: 768px) {
+                .container {
+                    padding-left: 1rem;
+                    padding-right: 1rem;
+                }
+            }
+
+            @media (max-width: 576px) {
+                .container {
+                    padding-left: 0.75rem;
+                    padding-right: 0.75rem;
+                }
             }
 
             /* Top Navbar Styling */
@@ -592,12 +1554,14 @@
             
             /* Default (Desktop) */
             .card {
-                transition: transform 0.2s ease-in-out;
+                transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
                 height: 100%;
+                overflow: hidden;
             }
             
             .card:hover {
-                transform: scale(1.02);
+                transform: translateY(-5px);
+                box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15) !important;
             }
             
             .card-body {
@@ -605,44 +1569,14 @@
                 flex-direction: column;
                 justify-content: space-between;
             }
-            
-            .card-arrow {
-                display: none;
-            }
-            
-            /* Mobile (max-width: 768px) */
-            @media (max-width: 768px) {
-                .card {
-                display: flex;
-                flex-direction: row;
-                height: auto; /* Allow for flexible height on mobile */
-                }
-            
+
+            /* Desktop card image */
+            @media (min-width: 769px) {
                 .card-img-top {
-                width: 35%;
-                height: auto;
-                object-fit: cover;
+                    height: 190px;
+                    object-fit: cover;
                 }
-            
-                .card-body {
-                width: 65%;
-                }
-            
-                .card-arrow {
-                display: block;
-                position: absolute;
-                top: 10px;
-                right: 10px;
-                width: 20px;
-                height: 20px;
-                background-image: url('arrow-icon.svg'); /* Change to your arrow icon */
-                background-size: cover;
-                }
-            
-                .card:hover {
-                transform: scale(1.02);
-                }
-            }   
+            }
             .icon-box {
                 position: absolute;
                 bottom: 0;
